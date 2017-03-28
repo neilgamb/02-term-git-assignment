@@ -1,7 +1,7 @@
 body {
     color: #233138;
-    font-family: roboto;
-    font-weight: 100px;
+    font-family: 'roboto', sans-serif;
+    font-weight: 100;
     font-size: 1.6rem;
     margin: 0;
     padding: 0;
@@ -25,4 +25,64 @@ body {
     width: 100%;
     max-width: none;
     overflow: hidden;
+}
+
+.home_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    margin: auto;
+    max-width: 400px;
+    width: 100%;
+}
+
+.home_heading {
+    opacity: 1;
+    transform: matrix(1,0,0,1,0,0);
+    margin: 0;
+    height: 113px;
+    width: 220px;
+    display: block;
+    font-size: 0;
+    background-image: url(http://weathertoride.io/assets/img/weather-to-ride-logo.svg);
+}
+
+.home_intro {
+    display: block;
+    padding-top: 1em;
+    font-weight: 100;
+}
+
+p {
+    margin-bottom: 2em;
+    margin: 2px;
+    padding: 0;
+}
+
+.home_down {
+    animation-name: bounce;
+    animation-duration: 5s;
+    animation-delay: 3s;
+    animation-iteration-count: infinite;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    margin-left: -60px;
+    width: 120px;
+    padding-bottom: 20px;
+    font-size: 16px;   
+    box-sizing: inherit; 
+    background-image: url(http://weathertoride.io/assets/img/icon-down.svg);
+    background-position-x: center;
+    background-position-y: bottom;
+    background-size: initial;
+    background-repeat-x: no-repeat;
+    background-repeat-y: no-repeat;
+    background-attachment: initial;
+    background-origin: initial;
+    background-clip: initial;
+    background-color: transparent;
 }
